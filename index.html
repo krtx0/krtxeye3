@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisionCare Optometry Clinic | Expert Eye Care</title>
+    <meta name="description" content="Professional eye care services, comprehensive eye exams, and advanced vision correction solutions.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center">
+                        <i class="fas fa-eye text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-800">Vision<span class="text-blue-600">Care</span></h1>
+                        <p class="text-xs text-gray-600 -mt-1">Optometry Clinic</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium transition">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-blue-600 font-medium transition">Services</a>
+                    <a href="#doctors" class="text-gray-700 hover:text-blue-600 font-medium transition">Our Doctors</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium transition">Contact</a>
+                </div>
+                
+                <div class="hidden md:block">
+                    <a href="#appointment" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-medium transition shadow-lg">
+                        Book Appointment
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-700" id="menuBtn">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="md:hidden mt-4 hidden bg-white rounded-xl shadow-xl p-4" id="mobileMenu">
+                <div class="flex flex-col space-y-4">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium py-2">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium py-2">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-blue-600 font-medium py-2">Services</a>
+                    <a href="#doctors" class="text-gray-700 hover:text-blue-600 font-medium py-2">Our Doctors</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium py-2">Contact</a>
+                    <a href="#appointment" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-medium text-center">
+                        Book Appointment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 md:pt-0 hero-gradient text-white">
+        <div class="container mx-auto px-4 py-16 md:py-32">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6">Expert Eye Care for <span class="text-yellow-300">Clear Vision</span></h1>
+                    <p class="text-xl mb-8 opacity-90">Comprehensive eye exams, advanced treatments, and personalized care for your vision health.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#appointment" class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-full text-lg font-bold text-center shadow-xl transition">
+                            <i class="fas fa-calendar-check mr-2"></i> Book Appointment
+                        </a>
+                        <a href="#services" class="border-2 border-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-full text-lg font-bold text-center transition">
+                            <i class="fas fa-stethoscope mr-2"></i> Our Services
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="w-80 h-80 bg-white/10 rounded-full flex items-center justify-center eye-animation">
+                            <div class="w-64 h-64 bg-white/20 rounded-full flex items-center justify-center">
+                                <div class="w-48 h-48 bg-white/30 rounded-full flex items-center justify-center">
+                                    <div class="w-32 h-32 bg-white rounded-full flex items-center justify-center">
+                                        <div class="w-16 h-16 bg-blue-900 rounded-full"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute -bottom-6 -right-6 bg-white text-gray-800 p-4 rounded-2xl shadow-2xl">
+                            <div class="flex items-center">
+                                <div class="bg-green-100 p-3 rounded-full mr-3">
+                                    <i class="fas fa-check text-green-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold">25+ Years Experience</p>
+                                    <p class="text-sm text-gray-600">Trusted by 10,000+ patients</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Our <span class="text-blue-600">Eye Care</span> Services</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">We offer comprehensive eye care services using state-of-the-art technology and personalized treatment plans.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-eye text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Comprehensive Eye Exams</h3>
+                    <p class="text-gray-600 mb-6">Thorough vision assessment, eye health evaluation, and prescription updates using advanced diagnostic equipment.</p>
+                    <a href="#" class="text-blue-600 font-medium flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-glasses text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Contact Lens Fitting</h3>
+                    <p class="text-gray-600 mb-6">Professional fitting for all types of contact lenses including specialty lenses for astigmatism and presbyopia.</p>
+                    <a href="#" class="text-blue-600 font-medium flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-capsules text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Dry Eye Treatment</h3>
+                    <p class="text-gray-600 mb-6">Advanced treatments for dry eye syndrome including prescription medications and specialized therapies.</p>
+                    <a href="#" class="text-blue-600 font-medium flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-child text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Pediatric Eye Care</h3>
+                    <p class="text-gray-600 mb-6">Specialized eye exams and vision therapy for children to detect and treat eye conditions early.</p>
+                    <a href="#" class="text-blue-600 font-medium flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-camera text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Retinal Imaging</h3>
+                    <p class="text-gray-600 mb-6">High-resolution digital imaging to detect and monitor retinal diseases like diabetic retinopathy and macular degeneration.</p>
+                    <a href="#" class="text-blue-600 font-medium flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-procedures text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Cataract Consultation</h3>
+                    <p class="text-gray-600 mb-6">Comprehensive evaluation and surgical consultation for cataract treatment with advanced lens options.</p>
+                    <a href="#" class="text-blue-600 font-medium flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0">
+                    <img src="http://static.photos/medical/640x360/1" alt="Modern eye clinic interior" class="rounded-2xl shadow-2xl w-full">
+                    <div class="flex -mt-10 ml-10">
+                        <div class="bg-white p-6 rounded-2xl shadow-xl mr-4">
+                            <div class="text-3xl font-bold text-blue-600">15K+</div>
+                            <div class="text-gray-600">Patients Served</div>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-xl">
+                            <div class="text-3xl font-bold text-blue-600">98%</div>
+                            <div class="text-gray-600">Patient Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 lg:pl-16">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">Why Choose <span class="text-blue-600">VisionCare</span>?</h2>
+                    <p class="text-gray-600 mb-8">With over 25 years of experience, our clinic combines cutting-edge technology with compassionate care to provide the highest quality eye care services.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-check text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Board-Certified Ophthalmologists</h4>
+                                <p class="text-gray-600">Our doctors are fellowship-trained and stay current with the latest advancements in eye care.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-check text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">State-of-the-Art Technology</h4>
+                                <p class="text-gray-600">We invest in the latest diagnostic and treatment equipment for accurate diagnosis and effective treatment.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-check text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Personalized Care Plans</h4>
+                                <p class="text-gray-600">Every patient receives a customized treatment plan based on their unique vision needs and lifestyle.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="inline-block mt-8 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-bold transition shadow-lg">
+                        <i class="fas fa-phone-alt mr-2"></i> Contact Us Today
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Doctors Section -->
+    <section id="doctors" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Meet Our <span class="text-blue-600">Expert Team</span></h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Our team of board-certified ophthalmologists and optometrists are dedicated to providing exceptional eye care.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Doctor 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                    <div class="h-64 overflow-hidden">
+                        <img src="http://static.photos/people/640x360/10" alt="Dr. Sarah Johnson" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Dr. Sarah Johnson</h3>
+                        <p class="text-blue-600 mb-4">Medical Director & Ophthalmologist</p>
+                        <p class="text-gray-600 mb-6">Board-certified ophthalmologist with 15+ years of experience specializing in cataract surgery and retinal diseases.</p>
+                        <div class="flex items-center text-gray-500">
+                            <i class="fas fa-graduation-cap mr-2"></i>
+                            <span class="text-sm">MD, Johns Hopkins University</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Doctor 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                    <div class="h-64 overflow-hidden">
+                        <img src="http://static.photos/people/640x360/20" alt="Dr. Michael Chen" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Dr. Michael Chen</h3>
+                        <p class="text-blue-600 mb-4">Optometrist & Contact Lens Specialist</p>
+                        <p class="text-gray-600 mb-6">Specializes in pediatric optometry, contact lens fitting, and myopia control with 10+ years of clinical experience.</p>
+                        <div class="flex items-center text-gray-500">
+                            <i class="fas fa-graduation-cap mr-2"></i>
+                            <span class="text-sm">OD, University of California</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Doctor 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                    <div class="h-64 overflow-hidden">
+                        <img src="http://static.photos/people/640x360/30" alt="Dr. Elena Rodriguez" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Dr. Elena Rodriguez</h3>
+                        <p class="text-blue-600 mb-4">Cornea & Dry Eye Specialist</p>
+                        <p class="text-gray-600 mb-6">Fellowship-trained in cornea and external diseases with expertise in advanced dry eye treatments and corneal surgery.</p>
+                        <div class="flex items-center text-gray-500">
+                            <i class="fas fa-graduation-cap mr-2"></i>
+                            <span class="text-sm">MD, Harvard Medical School</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-blue-600 text-white p-10">
+                        <h2 class="text-3xl font-bold mb-6">Schedule Your <span class="text-yellow-300">Eye Exam</span></h2>
+                        <p class="mb-8">Book an appointment with our expert eye care team. We'll contact you within 24 hours to confirm.</p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-white/20 p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Flexible Hours</h4>
+                                    <p>Monday - Friday: 8am - 7pm<br>Saturday: 9am - 4pm</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-white/20 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Call Us Directly</h4>
+                                    <p class="text-2xl font-bold">(555) 123-4567</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-white/20 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Visit Our Clinic</h4>
+                                    <p>123 Vision Street<br>Eye Care City, EC 12345</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 p-10">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-8">Book Appointment</h3>
+                        <form id="appointmentForm" class="appointment-form space-y-6">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Full Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500" placeholder="John Smith" required>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500" placeholder="john@example.com" required>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2">Phone Number</label>
+                                <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500" placeholder="(555) 123-4567" required>
+                            </div>
+                            
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-gray-700 mb-2">Preferred Date</label>
+                                    <input type="date" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500" required>
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-gray-700 mb-2">Preferred Time</label>
+                                    <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500" required>
+                                        <option value="">Select Time</option>
+                                        <option>Morning (8am - 12pm)</option>
+                                        <option>Afternoon (12pm - 4pm)</option>
+                                        <option>Evening (4pm - 7pm)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2">Service Needed</label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500" required>
+                                    <option value="">Select Service</option>
+                                    <option>Comprehensive Eye Exam</option>
+                                    <option>Contact Lens Fitting</option>
+                                    <option>Dry Eye Consultation</option>
+                                    <option>Pediatric Eye Exam</option>
+                                    <option>Cataract Consultation</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2">Message (Optional)</label>
+                                <textarea class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-blue-500" rows="3" placeholder="Any specific concerns or questions..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-lg transition">
+                                <i class="fas fa-paper-plane mr-2"></i> Submit Appointment Request
+                            </button>
+                            
+                            <p class="text-center text-gray-500 text-sm">We'll contact you to confirm your appointment within 24 hours.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Contact <span class="text-blue-600">VisionCare</span></h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">We're here to help with all your eye care needs. Reach out to us with any questions or concerns.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Contact Info -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-8">Contact Information</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Our Location</h4>
+                                <p class="text-gray-600">123 Vision Street<br>Eye Care City, EC 12345</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Phone Number</h4>
+                                <p class="text-gray-600">(555) 123-4567</p>
+                                <p class="text-sm text-gray-500">Mon-Fri: 8am-7pm, Sat: 9am-4pm</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Email Address</h4>
+                                <p class="text-gray-600">info@visioncareclinic.com</p>
+                                <p class="text-sm text-gray-500">We respond within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10">
+                        <h4 class="font-bold text-gray-800 mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-200 transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-200 transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-200 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-200 transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Map -->
+                <div class="lg:col-span-2">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden h-full">
+                        <div class="h-64 md:h-full bg-gray-200 flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-map-marked-alt text-5xl text-gray-400 mb-4"></i>
+                                <p class="text-gray-600">Interactive Map Location</p>
+                                <p class="text-sm text-gray-500 mt-2">123 Vision Street, Eye Care City</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center">
+                            <i class="fas fa-eye text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold">Vision<span class="text-blue-400">Care</span></h1>
+                            <p class="text-xs text-gray-400 -mt-1">Optometry Clinic</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 max-w-md">Providing exceptional eye care services with compassion and expertise since 1998.</p>
+                </div>
+                
+                <div class="flex flex-col md:flex-row md:space-x-12">
+                    <div class="mb-6 md:mb-0">
+                        <h4 class="font-bold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                            <li><a href="#services" class="text-gray-400 hover:text-white transition">Services</a></li>
+                            <li><a href="#doctors" class="text-gray-400 hover:text-white transition">Our Doctors</a></li>
+                            <li><a href="#appointment" class="text-gray-400 hover:text-white transition">Book Appointment</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold mb-4">Services</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Eye Exams</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Contact Lenses</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Dry Eye Treatment</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Cataract Surgery</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-10 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 VisionCare Optometry Clinic. All rights reserved.</p>
+                <p class="mt-2 text-sm">This website is for demonstration purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition opacity-0">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
